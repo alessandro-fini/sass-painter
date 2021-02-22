@@ -1,0 +1,27 @@
+header{
+  width: 100%;
+  height: $h-100;
+  background-color: $black;
+
+  @include container;
+
+  .top{
+    height: 50%;
+    @include flex (flex-end, center);
+
+    ul{
+      @include flex (space-around, center);
+      flex-basis: 35%;
+
+      li{
+        i{
+          color: $lightblue;
+        }
+        a{
+          color: $lightgray;
+        }
+      }
+
+    }
+  }
+}

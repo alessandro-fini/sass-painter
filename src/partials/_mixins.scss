@@ -1,0 +1,13 @@
+@mixin container {
+  .container{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+@mixin flex ($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
