@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #e8e8e8;
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -188,6 +192,98 @@ header .bottom ul li:hover .drop-down {
   border: 2px solid black;
   color: black;
   cursor: pointer;
+}
+
+main h1 {
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+}
+main .container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+main .container .top {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .top .box {
+  flex-basis: 32%;
+}
+main .container .top .box .img-container {
+  height: 200px;
+}
+main .container .top .box .img-container img {
+  width: 100%;
+}
+main .container .top .box .text-container {
+  padding: 30px;
+  background-color: #fff;
+}
+main .container .top .box .text-container h3,
+main .container .top .box .text-container p {
+  font-size: 20px;
+}
+main .container .top .box .text-container p {
+  margin: 30px 0;
+}
+main .container .top .box .text-container a {
+  font-size: 18px;
+  color: #009cff;
+}
+main .container .top .box .text-container a:hover {
+  text-decoration: underline;
+}
+main .container .center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .container .center .box,
+main .container .center .box-img {
+  height: 300px;
+  flex-basis: 50%;
+}
+main .container .center .box {
+  padding: 40px 30px;
+  color: #fff;
+  background-color: #3c1567;
+}
+main .container .center .box span {
+  font-size: 30px;
+}
+main .container .center .box p {
+  margin: 30px 0;
+  line-height: 1.6;
+  font-size: 25px;
+}
+main .container .center .box .btn {
+  display: inline-block;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  color: #3c1567;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+main .container .center .box .btn:hover {
+  background-color: lightgray;
+}
+main .container .center .box-img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/wacom-painter.jpg");
+}
+main .container .center .box-img img {
+  width: 70%;
 }
 
 footer {

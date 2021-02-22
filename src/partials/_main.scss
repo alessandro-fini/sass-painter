@@ -1,0 +1,98 @@
+main{
+  h1{
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  @include container;
+
+  .container .top{
+    margin-bottom: 80px;
+    @include flex (space-between);
+
+    .box{
+      flex-basis: 32%;
+
+      .img-container{
+        height: $h-200;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      .text-container{
+        padding: $p-30;
+        background-color: $white;
+
+        h3,
+        p{
+          font-size: 20px;
+        }
+
+        p{
+          margin: $mtb-30;
+        }
+
+        a{
+          font-size: 18px;
+          color: #009cff;
+
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .container .center{
+    @include flex;
+    flex-wrap: wrap;
+
+    .box,
+    .box-img{
+      height: 300px;
+      flex-basis: 50%;
+    }
+
+    .box{
+      padding: 40px 30px;
+      color: $white;
+      background-color: #3c1567;
+
+      span{
+        font-size: 30px;
+      }
+
+      p{
+        margin: $mtb-30;
+        line-height: 1.6;
+        font-size: 25px;
+      }
+
+      .btn{
+        @include btn ($white, none, #3c1567);
+        padding: 10px 20px;
+
+        &:hover{
+          background-color: $lightgray;
+        }
+      }
+    }
+
+    .box-img{
+      @include flex;
+
+      img{
+        width: 70%;
+      }
+
+      background-image: url('https://www.painterartist.com/static/ptr/images/home/wacom-painter.jpg');
+    }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
