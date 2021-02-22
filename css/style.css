@@ -176,6 +176,7 @@ header .bottom ul li:hover .drop-down {
   background-color: black;
   border: none;
   color: #fff;
+  cursor: pointer;
   padding: 22px 32px;
   margin-right: 20px;
 }
@@ -186,4 +187,35 @@ header .bottom ul li:hover .drop-down {
   background-color: transparent;
   border: 2px solid black;
   color: black;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+}
+footer .top {
+  width: 100%;
+  height: 70%;
+  padding: 20px 0;
+  background-color: lightgray;
+}
+footer .top .container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+footer .top .container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .top .container .box {
+  flex-basis: 20%;
+}
+footer .bottom {
+  width: 100%;
+  height: 30%;
+  background-color: black;
 }

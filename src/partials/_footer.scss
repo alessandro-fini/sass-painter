@@ -1,0 +1,27 @@
+footer{
+  width: 100%;
+  height: $h-400;
+
+  .top{
+    width: 100%;
+    height: 70%;
+    padding: $ptb-20;
+    background-color: $lightgray;
+    @include container;
+    
+    .container{
+      padding: $p-10;
+      @include flex (space-between);
+
+      .box{
+        flex-basis: 20%;
+      }
+    }
+  }
+
+  .bottom{
+    width: 100%;
+    height: 30%;
+    background-color: $black;
+  }
+}
