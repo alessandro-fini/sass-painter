@@ -7,6 +7,7 @@ footer{
     height: 70%;
     padding: $ptb-20;
     background-color: $lightgray;
+    position: relative;
     @include container;
     
     .container{
@@ -15,6 +16,32 @@ footer{
 
       .box{
         flex-basis: 20%;
+
+        ul li{
+          margin: $mtb-5;
+
+          a{
+            color: $gray;
+          }
+
+          &:hover a{
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .social{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-right: 5%;
+        margin-bottom: 20px;
+        margin-left: $ml-20;
+        font-size: 25px;
+
+        i{
+          cursor: pointer;
+        }
       }
     }
   }
@@ -23,5 +50,35 @@ footer{
     width: 100%;
     height: 30%;
     background-color: $black;
+    @include container;
+    
+    .container{
+      @include flex (space-between);
+    }
+
+    .left{
+      height: 100%;
+      @include flex;
+
+      img{
+        margin-right: $mr-20;
+      }
+    }
+
+    .right{
+      a{
+        margin-right: $mr-20;
+        color: $gray;
+
+        &:hover{
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+
+      span{
+        color: $white;
+      }
+    }
   }
 }
