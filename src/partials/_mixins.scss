@@ -11,3 +11,17 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin background-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin btn ($bg: transparent, $border: none, $color:black) {
+  display: inline-block;
+  padding: $p-btn;
+  text-transform: uppercase;
+  background-color: $bg;
+  border: $border;
+  color: $color;
+}

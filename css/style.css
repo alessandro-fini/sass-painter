@@ -122,3 +122,67 @@ header .bottom ul li .drop-down ol li:hover i {
 header .bottom ul li:hover .drop-down {
   opacity: 1;
 }
+
+.jumbo {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/bg-painter-home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbo .container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.jumbo .container {
+  position: relative;
+}
+.jumbo .content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.jumbo .logo {
+  width: 20%;
+}
+.jumbo .logo img {
+  width: 100%;
+}
+.jumbo p {
+  max-width: 50%;
+  font-size: 28px;
+  margin: 20px 0;
+}
+.jumbo h3 {
+  margin-top: 40px;
+}
+.jumbo span {
+  font-size: 20px;
+}
+.jumbo h3,
+.jumbo span {
+  color: #c70cb9;
+}
+.jumbo .btn-box {
+  margin-top: 40px;
+}
+.jumbo .btn-box .btn:first-of-type {
+  display: inline-block;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  background-color: black;
+  border: none;
+  color: #fff;
+  padding: 22px 32px;
+  margin-right: 20px;
+}
+.jumbo .btn-box .btn:last-of-type {
+  display: inline-block;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+}

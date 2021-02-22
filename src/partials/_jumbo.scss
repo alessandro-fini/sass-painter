@@ -1,0 +1,59 @@
+.jumbo{
+  width: 100%;
+  height: $h-500;
+  background-image: url('../img/bg-painter-home.jpg');
+  @include background-img;
+  @include container;
+
+  .container{
+    position: relative;
+  }
+
+  .content{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .logo{
+    width: 20%;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  p{
+    max-width: 50%;
+    font-size: 28px;
+    margin: $mtb-20;
+  }
+
+  h3{
+    margin-top: $mt-40;
+  }
+
+  span{
+    font-size: 20px;
+  }
+
+  h3,
+  span{
+    color: $pink;
+  }
+
+  .btn-box{
+    margin-top: $mt-40;
+
+    .btn:first-of-type{
+      @include btn ($black, none, $white);
+      padding: 22px 32px;
+      margin-right: $mr-20;
+    }
+
+    .btn:last-of-type{
+      @include btn (transparent, 2px solid black, black);
+    }
+  }
+}
