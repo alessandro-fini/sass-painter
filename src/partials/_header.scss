@@ -7,7 +7,7 @@ header{
 
   .top{
     height: 50%;
-    @include flex (flex-end, center);
+    @include flex (flex-end);
 
     ul{
       @include flex (space-around, center);
@@ -17,11 +17,98 @@ header{
         i{
           color: $lightblue;
         }
+
         a{
+          margin-left: $ml-5;
           color: $lightgray;
+
+          &:hover{
+            color: $white;
+            text-decoration: underline;
+          }
         }
       }
+    }
+  }
 
+  .bottom{
+    height: 50%;
+    @include flex;
+
+    .logo{
+      img{
+        height: 30%;
+      }
+    }
+
+    ul{
+      height: 100%;
+      @include flex (space-between);
+      margin-left: $ml-40;
+
+      li{
+        height: 100%;
+        padding: $plr-10;
+        position: relative;
+        @include flex;
+
+        &:hover{
+          background-color: $white;
+          
+          a{
+            color: $black;
+          }
+        }
+
+        a{
+          color: $white;
+        }
+
+        i{
+          margin-left: $ml-5;
+          font-size: 12px;
+          color: $lightgray;
+        }
+
+        .drop-down{
+          width: $w-200;
+          padding: $p-10;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transform: translateY(100%);
+          background-color: $white;
+          @include flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          opacity: 0;
+
+          ol{
+            width: 100%;
+
+            li {
+              width: 100%;
+              margin: $mtb-20;
+              @include flex (space-between);
+
+              &:hover{
+                background-color: $lightgray;
+                cursor: pointer;
+
+                i{
+                  color: $black;
+                }
+              }
+            }
+          }
+        }
+
+        &:hover{
+          .drop-down{
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 }
