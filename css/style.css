@@ -110,8 +110,8 @@ header .bottom ul li .drop-down ol {
   width: 100%;
 }
 header .bottom ul li .drop-down ol li {
+  line-height: 45px;
   width: 100%;
-  margin: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -255,6 +255,12 @@ main .container .center .box {
   color: #fff;
   background-color: #3c1567;
 }
+main .container .center .box:nth-child(2n) {
+  background-color: #3c3c3c;
+}
+main .container .center .box#last {
+  background-color: #0072bc;
+}
 main .container .center .box span {
   font-size: 30px;
 }
@@ -284,6 +290,14 @@ main .container .center .box-img {
 }
 main .container .center .box-img img {
   width: 70%;
+}
+main .container .center .box-img:nth-of-type(3) {
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/painter-master.jpg");
+  background-size: contain;
+}
+main .container .center .box-img#last-img {
+  background-image: url("https://www.painterartist.com/static/ptr/images/home/business-education.jpg");
+  background-position: center;
 }
 
 footer {
@@ -331,6 +345,24 @@ footer .top .container .social {
 }
 footer .top .container .social i {
   cursor: pointer;
+}
+footer .top .container .social i:nth-of-type(1) {
+  color: #e4405f;
+}
+footer .top .container .social i:nth-of-type(2) {
+  color: #3b5998;
+}
+footer .top .container .social i:nth-of-type(3) {
+  color: #1da1f2;
+}
+footer .top .container .social i:nth-of-type(4) {
+  color: #cd201f;
+}
+footer .top .container .social i:nth-of-type(5) {
+  color: #bd081c;
+}
+footer .top .container .social i:nth-of-type(6) {
+  color: #ff8d00;
 }
 footer .bottom {
   width: 100%;

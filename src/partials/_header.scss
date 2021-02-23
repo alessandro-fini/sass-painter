@@ -87,8 +87,8 @@ header{
             width: 100%;
 
             li {
+              line-height: 45px;
               width: 100%;
-              margin: $mtb-20;
               @include flex (space-between);
 
               &:hover{
